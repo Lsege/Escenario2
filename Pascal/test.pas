@@ -1,7 +1,10 @@
-Program Holamundo;
+Program test;
 uses crt;
+	var 
+		aux : integer;
+	 	N, aux2 : Real;
+
 begin
-	writeln('Holamundo');
+
 	readln(); // Para que no se cierre al ejecutar
 end.
-
