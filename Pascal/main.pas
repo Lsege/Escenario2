@@ -1,9 +1,17 @@
 program main;
 uses crt;
+type 
+	RegistroTemp = record
+		Annio:integer;
+		Mes: 1..12;
+		Dia: 1..31;
+		Temperatura: -30..120
+	end;
 
 var 
 	Temperatura, auxiliarReal : Real;
 	cantidadAsteriscos, cantidadEspacios, auxiliarEntero,  i : integer;
+	ListaTemperaturas : RegistroTemp;
 
 const 
 	Espacio = 10;

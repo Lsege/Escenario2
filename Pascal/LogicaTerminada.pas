@@ -1,4 +1,4 @@
-program main;
+program LogicaTerminada;
 uses crt;
 
 var 
