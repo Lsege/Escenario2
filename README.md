@@ -53,5 +53,11 @@ de ancho. Enseguida se muestra un ejemplo parcial, que presenta el encabezado, e
 para una temperatura negativa y la salida para varias temperaturas positivas. Observe cómo se
 redondean las temperaturas al número de estrellas apropiado.</p>
 
-https://raw.githubusercontent.com/Lsege/Escenario2/main/Muetra de Temperaturas.png
+https://raw.githubusercontent.com/Lsege/Escenario2/main/Muestra.png
+
+### Se solicita informar: </br>
+● Porcentaje de temperaturas inferiores a 0, sobre el total de temperaturas tomadas </br>
+● Promedio de temperatura. Si es mayor a 50°, emitir mensaje de “ALERTA ROJA” </br>
+● Generar un archivo de salida con temperaturas del mes de Agosto de 2021.
+
 
