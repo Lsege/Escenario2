@@ -53,3 +53,5 @@ de ancho. Enseguida se muestra un ejemplo parcial, que presenta el encabezado, e
 para una temperatura negativa y la salida para varias temperaturas positivas. Observe cómo se
 redondean las temperaturas al número de estrellas apropiado.</p>
 
+https://raw.githubusercontent.com/Lsege/Escenario2/main/Muetra de Temperaturas.png
+
