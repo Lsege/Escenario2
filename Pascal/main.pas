@@ -1,7 +1,7 @@
 program main;
 uses crt;
 type 
-	RegistroTemp = record
+	tRegistro = record
 		Annio:integer;
 		Mes: 1..12;
 		Dia: 1..31;
@@ -10,11 +10,12 @@ type
 
 var 
 	Temperatura, auxiliarReal : Real;
-	cantidadAsteriscos, cantidadEspacios, auxiliarEntero,  i : integer;
+	cantidadAsteriscos, cantidadEspacios, cantidadEspaciosRoja, auxiliarEntero,  i : integer;
 	ListaTemperaturas : RegistroTemp;
 
 const 
 	Espacio = 10;
+	EspacioRoja = 40;
 
 begin
 	writeln('Ingrese el valor de la temperatura');
@@ -42,7 +43,7 @@ begin
 		for i := 1 to Espacio do write(' ');
 		write('|');
 		for i := 1 to cantidadAsteriscos do write('*');
-
+		
 	end;
 	readln(); // Esto es para evitar que se cierre al ejecutar
 

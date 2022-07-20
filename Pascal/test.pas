@@ -1,26 +1,29 @@
 Program test;
 uses crt;
-	var 
-		aux, aux3, i : integer;
-	 	N, auxREAL : Real;
-
-
-	const 
-		esp = 10;
+type
+	tRegistro = record
+		Annio:integer;
+		Mes: 1..12;
+		Dia: 1..31;
+		Temperatura: -30..120
+	end;
+var
+	Registro : tRegistro;
+	Archivo : file of tRegistro;
 
 begin
-	aux := 0;
-	N := -21;
-	auxREAL := N*(-1);
-	aux := round(auxREAL);
-	aux := aux div 3;
-	writeln('   -30        0        30        60       90       120');
-	write(N:4:0);
-	if (N<0) then
-		aux3 := esp - aux;
-		for i := 1 to aux3 do write(' ');
-		for i := 1 to aux do write('*');
-		write('|');
+	assign(Archivo, 'ArchivoDeTemperaturas.dat');
+	reset(archivo);
+	
+	while not eof(Archivo) do
+	begin
+	read(Archivo,Registro);
+	writeln(Registro.Annio);
+	writeln(Registro.Mes);
+	writeln(Registro.Dia);
+	writeln(Registro.Temperatura);
+	end;
 
+	close(Archivo);
 	readln(); // Para que no se cierre al ejecutar
 end.
