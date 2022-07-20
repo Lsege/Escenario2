@@ -14,189 +14,189 @@ var
 begin
 	assign(Archivo, 'ArchivoDeTemperaturas.dat');
 	rewrite(Archivo);
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2019;
+	Registro.Mes := 1;
+	Registro.Dia := 15;
+	Registro.Temperatura := 115;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2019;
+	Registro.Mes := 3;
+	Registro.Dia := 9;
+	Registro.Temperatura := 100;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2019;
+	Registro.Mes := 6;
+	Registro.Dia := 5;
+	Registro.Temperatura := -15;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+			Registro.Annio := 2019;
+			Registro.Mes := 7;
+			Registro.Dia := 14;
+	Registro.Temperatura := -29;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2019;
+	Registro.Mes := 9;
+	Registro.Dia := 12;
+	Registro.Temperatura := 45;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2019;
+	Registro.Mes := 12;
+	Registro.Dia := 6;
+	Registro.Temperatura := 119;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+			Registro.Annio := 2020;
+			Registro.Mes := 1;
+			Registro.Dia := 6;
+	Registro.Temperatura := 100;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2020;
+			Registro.Mes := 2;
+			Registro.Dia := 7;
+	Registro.Temperatura := 95;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2020;
+			Registro.Mes := 4;
+			Registro.Dia := 15;
+	Registro.Temperatura := 40;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2020;
+			Registro.Mes := 6;
+			Registro.Dia := 14;
+	Registro.Temperatura := -20;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2020;
+			Registro.Mes := 7;
+			Registro.Dia := 12;
+	Registro.Temperatura := -9;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2020;
+			Registro.Mes := 8;
+			Registro.Dia := 23;
+	Registro.Temperatura := 15;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2020;
+			Registro.Mes := 11;
+			Registro.Dia := 14;
+	Registro.Temperatura := 35;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2020;
+			Registro.Mes := 12;
+			Registro.Dia := 25; // NAVIDAD
+	Registro.Temperatura := 45;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+	Registro.Annio := 2021;
+			Registro.Mes := 1;
+			Registro.Dia := 1;
+	Registro.Temperatura := 55;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 3;
+			Registro.Dia := 3;
+	Registro.Temperatura := 35;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 5;
+			Registro.Dia := 14;
+	Registro.Temperatura := 15;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 8;
+			Registro.Dia := 7;
+	Registro.Temperatura := -2;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 8;
+			Registro.Dia := 10;
+	Registro.Temperatura := 15;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 8;
+			Registro.Dia := 14;
+	Registro.Temperatura := 45;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 8;
+			Registro.Dia := 20;
+	Registro.Temperatura := 75;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 8;
+			Registro.Dia := 25;
+	Registro.Temperatura := 100;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 8;
+			Registro.Dia := 31;
+	Registro.Temperatura := 120;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 10;
+			Registro.Dia := 25;
+	Registro.Temperatura := 40;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 11;
+			Registro.Dia := 14;
+	Registro.Temperatura := 32;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 11;
+			Registro.Dia := 22;
+	Registro.Temperatura := 90;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2021;
+			Registro.Mes := 12;
+			Registro.Dia := 25;
+	Registro.Temperatura := 120;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+		Registro.Annio := 2022;
+			Registro.Mes := 1;
+			Registro.Dia := 7;
+	Registro.Temperatura := 100;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+			Registro.Annio := 2022;
+			Registro.Mes := 3;
+			Registro.Dia := 16;
+	Registro.Temperatura := 30;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+			Registro.Annio := 2022;
+			Registro.Mes := 5;
+			Registro.Dia := 15;
+	Registro.Temperatura := -10;
+	write(Archivo,Registro);
 
-	Registro.Annio := ;
-	Registro.Mes := ;
-	Registro.Dia := ;
-	Registro.Temperatura := ;
-	write(Archivo,Registro)
+			Registro.Annio := 2022;
+			Registro.Mes := 7;
+			Registro.Dia := 20;
+	Registro.Temperatura := -29;
+	write(Archivo,Registro);
 end.

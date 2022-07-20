@@ -1,4 +1,4 @@
-Program test;
+Program RecorridoArchivo;
 uses crt;
 type
 	tRegistro = record
@@ -18,10 +18,14 @@ begin
 	while not eof(Archivo) do
 	begin
 	read(Archivo,Registro);
-	writeln(Registro.Annio);
-	writeln(Registro.Mes);
-	writeln(Registro.Dia);
-	writeln(Registro.Temperatura);
+	write(Registro.Annio);
+	write('/');
+	write(Registro.Mes);
+	write('/');
+	write(Registro.Dia);
+	write('||');	
+	write(Registro.Temperatura);
+	writeln(' ');
 	end;
 
 	close(Archivo);
