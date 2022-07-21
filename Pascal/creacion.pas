@@ -62,11 +62,6 @@ begin
 	Registro.Temperatura := 95;
 	write(Archivo,Registro);
 
-	Registro.Annio := 2020;
-			Registro.Mes := 4;
-			Registro.Dia := 15;
-	Registro.Temperatura := 40;
-	write(Archivo,Registro);
 
 	Registro.Annio := 2020;
 			Registro.Mes := 6;
@@ -134,11 +129,6 @@ begin
 	Registro.Temperatura := 45;
 	write(Archivo,Registro);
 
-		Registro.Annio := 2021;
-			Registro.Mes := 8;
-			Registro.Dia := 20;
-	Registro.Temperatura := 75;
-	write(Archivo,Registro);
 
 		Registro.Annio := 2021;
 			Registro.Mes := 8;
@@ -170,11 +160,6 @@ begin
 	Registro.Temperatura := 90;
 	write(Archivo,Registro);
 
-		Registro.Annio := 2021;
-			Registro.Mes := 12;
-			Registro.Dia := 25;
-	Registro.Temperatura := 120;
-	write(Archivo,Registro);
 
 		Registro.Annio := 2022;
 			Registro.Mes := 1;
@@ -182,11 +167,6 @@ begin
 	Registro.Temperatura := 100;
 	write(Archivo,Registro);
 
-			Registro.Annio := 2022;
-			Registro.Mes := 3;
-			Registro.Dia := 16;
-	Registro.Temperatura := 30;
-	write(Archivo,Registro);
 
 			Registro.Annio := 2022;
 			Registro.Mes := 5;
