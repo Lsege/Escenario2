@@ -1,3 +1,5 @@
+**Proyecto terminado** <br>
+Accede a la documentación: https://github.com/Lsege/Escenario2/blob/main/Documentaci%C3%B3n%20del%20Proyecto.md
 # Objetivo General
 
 <p>Introducir a cada estudiante en el desarrollo de software, brindándole la posibilidad de manejar
