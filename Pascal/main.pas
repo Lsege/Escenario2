@@ -11,16 +11,19 @@ type
 var 
 	auxiliarReal, inferiores, acumulador, porcentaje : Real;
 	cantidadAsteriscos, cantidadEspacios, i, contador : integer;
-	Registro : tRegistro;
+	Registro, RegistroSal : tRegistro;
 	Archivo : file of tRegistro;
-
+	ArchivoSal : file of tRegistro;
 const 
 	Espacio = 11;
 	EspacioRoja = 40;
 
 begin
+	assign(ArchivoSal, 'ArchivoDeSalida.dat');
+	rewrite(ArchivoSal);
+
 	assign(Archivo, 'ArchivoDeTemperaturas.dat');
-	reset(archivo);
+	reset(Archivo);
 	writeln('   -30        0         30        60       90        120');
 	acumulador := 0; contador := 0; inferiores := 0;
 // aca arrancariamos a tratar el archivo
@@ -43,7 +46,7 @@ begin
 			for i := 1 to cantidadAsteriscos do write('*');
 			write('|');
 		end;
-		if (Registro.Temperatura >0) then 
+		if (Registro.Temperatura >=0) then 
 		begin
 			write(Registro.Temperatura);
 			auxiliarReal := Registro.Temperatura /3;
@@ -57,10 +60,21 @@ begin
 		end;
 		writeln('');
 
+		if (Registro.Annio = 2021) then
+		begin
+			if (Registro.Mes = 8) then
+			begin
+				write(ArchivoSal,Registro);
+			end;
+		end;
+
 	end;
 	porcentaje := PorcentajeFrio(contador, inferiores);
 	writeln('El porcentaje de temperaturas inferiores a 0 grados es: ',porcentaje:3:2);
 	PromedioTemp(contador, acumulador);
+
+	close(Archivo); close(ArchivoSal);
 	readln(); // Esto es para evitar que se cierre al ejecutar
+
 
 end.

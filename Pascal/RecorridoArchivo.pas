@@ -13,7 +13,7 @@ var
 
 begin
 	assign(Archivo, 'ArchivoDeTemperaturas.dat');
-	reset(archivo);
+	reset(Archivo);
 	
 	while not eof(Archivo) do
 	begin

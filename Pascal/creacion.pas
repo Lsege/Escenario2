@@ -72,7 +72,7 @@ begin
 	Registro.Annio := 2020;
 			Registro.Mes := 7;
 			Registro.Dia := 12;
-	Registro.Temperatura := -9;
+	Registro.Temperatura := 0;
 	write(Archivo,Registro);
 
 	Registro.Annio := 2020;
@@ -179,4 +179,6 @@ begin
 			Registro.Dia := 20;
 	Registro.Temperatura := -29;
 	write(Archivo,Registro);
+
+	close(Archivo);
 end.
