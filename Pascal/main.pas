@@ -11,12 +11,11 @@ type
 var 
 	auxiliarReal, inferiores, acumulador, porcentaje : Real;
 	cantidadAsteriscos, cantidadEspacios, i, contador : integer;
-	Registro, RegistroSal : tRegistro;
+	Registro : tRegistro;
 	Archivo : file of tRegistro;
 	ArchivoSal : file of tRegistro;
 const 
 	Espacio = 11;
-	EspacioRoja = 40;
 
 begin
 	assign(ArchivoSal, 'ArchivoDeSalida.dat');
