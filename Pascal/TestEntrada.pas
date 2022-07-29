@@ -1,4 +1,4 @@
-Program RecorridoArchivo;
+Program TestEntrada;
 uses crt;
 type
 	tRegistro = record

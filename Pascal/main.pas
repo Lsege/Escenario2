@@ -1,4 +1,4 @@
-program main;
+program Main;
 uses crt;
 type 
 	tRegistro = record
@@ -11,7 +11,7 @@ type
 
 
 var 
-	auxiliarReal, inferiores, acumulador, porcentaje : Real;
+	auxiliarReal, CantInferioresACero, acumulador, porcentaje : Real;
 	cantidadAsteriscos, cantidadEspacios, i, contador : integer;
 	Registro : tRegistro;
 	ArchivoEn : file of tRegistro;
@@ -57,6 +57,7 @@ function PorcentajeFrio(total : integer; inferiores: real): real;
 		PorcentajeFrio := (inferiores * 100)/total;
 	end;
 
+
 procedure PromedioTemp(total: integer; acumulador:real );
 	var promedio : real;
 	begin
@@ -68,7 +69,7 @@ procedure PromedioTemp(total: integer; acumulador:real );
 begin
 	initializationS(ArchivoSal);
   	initializationE(ArchivoEn);
-  	acumulador := 0; contador := 0; inferiores := 0;
+  	acumulador := 0; contador := 0; CantInferioresACero := 0;
 
 	writeln('   -30        0         30        60       90        120');
 
@@ -81,10 +82,9 @@ begin
 
 		if (Registro.Temperatura < 0) then
 		begin
-			inferiores := inferiores +1; // Cuenta los inferiores a 0 para calcular el porcentaje.
+			CantInferioresACero := CantInferioresACero +1; // Cuenta los inferiores a 0 para calcular el porcentaje.
 			write(Registro.Temperatura); // Mostramos el valor.
-			auxiliarReal := Registro.Temperatura / 3; // Dividimos por 3.
-			auxiliarReal := auxiliarReal * (-1); // Pasamos a positivo.
+			auxiliarReal := (Registro.Temperatura/3)*(-1); // Dividimos por 3 y pasamos a positivo.
 			cantidadAsteriscos := round(auxiliarReal); // Pasamos a entero.
 			cantidadEspacios := Espacio - cantidadAsteriscos; // Calculamos la cantidad de espacios necesarios.
 			if (Registro.Temperatura > -10) then write(' ');
@@ -117,8 +117,8 @@ begin
 		end;
 
 	end;
-	porcentaje := PorcentajeFrio(contador, inferiores);
-	writeln('El porcentaje de temperaturas inferiores a 0 grados es: ',porcentaje:3:2);
+	porcentaje := PorcentajeFrio(contador, CantInferioresACero);
+	writeln('El porcentaje de temperaturas inferiores a 0 grados es: ',porcentaje:3:2, '%');
 	PromedioTemp(contador, acumulador);
 
 	close(ArchivoEn); close(ArchivoSal);

@@ -1,9 +1,9 @@
-program LogicaTerminada;
+program LogicaParaMostrarTemp;
 uses crt;
 
 var 
 	Temperatura, auxiliarReal : Real;
-	cantidadAsteriscos, cantidadEspacios, auxiliarEntero,  i : integer;
+	cantidadAsteriscos, cantidadEspacios, i : integer;
 
 const 
 	Espacio = 10;

@@ -1,4 +1,4 @@
-Program creacion;
+Program ArchivoEntrada;
 uses crt;
 type
 	tRegistro = record
@@ -10,6 +10,7 @@ type
 var
 	Registro : tRegistro;
 	Archivo : file of tRegistro;
+	opcion: Char;
 
 begin
 	assign(Archivo, 'ArchivoDeTemperaturas.dat');
@@ -180,5 +181,25 @@ begin
 	Registro.Temperatura := -29;
 	write(Archivo,Registro);
 
-	close(Archivo);
+ 
+Writeln('Si desea agregar mas datos presione "s"');
+ReadLn(opcion);
+
+while (opcion ='s') do
+begin
+    Writeln('Ingrese Anio'); Readln(Registro.Annio);
+
+    Writeln('Ingrese Mes');  Readln(Registro.Mes);
+
+    WriteLn('Ingrese Dia'); Readln(Registro.Dia);
+
+    WriteLn('Ingrese Temperatura'); ReadLn(Registro.Temperatura);
+      
+    Write(Archivo, Registro); 
+
+    WriteLn('Desea continuar?'); ReadLn(opcion);
+
+end;
+
+Close(Archivo);
 end.
