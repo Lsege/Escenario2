@@ -1,3 +1,10 @@
+//Escenario 2
+//Grupo 4J, Integrantes:
+//Alan Gustavo GUTIERREZ 
+//Lucas German SANABRIA 
+//Dilan Cesar Alfredo ROLON 
+//Mauro Alesandro SUREZ
+
 program Main;
 uses crt;
 type 
@@ -96,7 +103,7 @@ begin
 
 		if (Registro.Temperatura >=0) then 
 		begin
-			write(Registro.Temperatura);
+			write(Registro.Temperatura); // Muestra la Temperatura
 			auxiliarReal := Registro.Temperatura /3;
 			cantidadAsteriscos := round	(auxiliarReal);
 			if (Registro.Temperatura < 10) then write(' '); // Para alinear correctamente la gráfica
@@ -106,7 +113,7 @@ begin
 			for i := 1 to cantidadAsteriscos do write('*');
 			
 		end;
-		writeln('');
+		writeln('');// hace un salto de línea para el proximo registro
 
 		if (Registro.Annio = 2021) then
 		begin
